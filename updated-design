@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Jost,sans-serif;color:#1a1a1a;background:#fff;-webkit-font-smoothing:antialiased;letter-spacing:.02em}
+    a{color:#d41472;text-decoration:none}
+    a:hover{color:#e90670}
+    img{display:block;max-width:100%}
+    button{font-family:inherit;cursor:pointer}
+    ::-webkit-scrollbar{width:6px;height:6px}
+    ::-webkit-scrollbar-thumb{background:#d9d9d9;border-radius:6px}
+    @keyframes meera-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  </style>
+</helmet>
+<template id="__bundler_thumbnail">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#e6007e"/><g fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="26" y="38" width="34" height="24" rx="4"/><path d="M60 46l16-8v24l-16-8z"/></g></svg>
+</template>
+<div style="max-width:1500px;margin:0 auto;background:#fff">
+
+  <div style="background:#e6007e;color:#fff;display:flex;align-items:center;justify-content:center;gap:40px;height:44px;font-size:14px;letter-spacing:.14em;font-weight:600">
+    <span style="cursor:pointer;opacity:.85;font-size:18px">‹</span>
+    <span style="text-decoration:underline;text-underline-offset:4px">SHIPPING PAN INDIA &amp; WORLD WIDE</span>
+    <span style="cursor:pointer;opacity:.85;font-size:18px">›</span>
+  </div>
+  <div style="background:#ec0a86;color:#fff;height:44px;overflow:hidden;display:flex;align-items:center">
+    <div style="display:flex;align-items:center;gap:56px;width:max-content;animation:meera-marquee 26s linear infinite;padding-left:56px">
+      <sc-for list="{{ saleStrip }}" as="s">
+        <span style="display:flex;align-items:center;gap:9px;white-space:nowrap;font-size:14px;letter-spacing:.06em;font-weight:700">
+          <span style="width:19px;height:19px;border-radius:4px;background:#2ecc71;display:flex;align-items:center;justify-content:center;flex:0 0 auto">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"></path></svg>
+          </span>{{ s }}
+        </span>
+      </sc-for>
+      <sc-for list="{{ saleStrip }}" as="s">
+        <span style="display:flex;align-items:center;gap:9px;white-space:nowrap;font-size:14px;letter-spacing:.06em;font-weight:700">
+          <span style="width:19px;height:19px;border-radius:4px;background:#2ecc71;display:flex;align-items:center;justify-content:center;flex:0 0 auto">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"></path></svg>
+          </span>{{ s }}
+        </span>
+      </sc-for>
+    </div>
+  </div>
+  </div>
+
+  <header style="padding:22px 40px 0">
+    <div style="display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px">
+      <div></div>
+      <a href="#" style="justify-self:center"><img src="https://www.meerasplussizestore.com/cdn/shop/files/Logo_Webp_efb9b2e7-75cc-4d3e-9981-aa127f90f385.webp" alt="Meera's" style="height:80px;object-fit:contain"></a>
+      <div style="display:flex;align-items:center;justify-content:flex-end;gap:22px">
+        <div style="display:flex;align-items:center;border:1px solid #cfcfcf;border-radius:2px;padding:11px 16px;min-width:260px;gap:10px;color:#8a8a8a">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#8a8a8a" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4-4"></path></svg>
+          <span style="font-size:13px;letter-spacing:.14em;color:#a10c53;font-weight:500">SEARCH FOR KURTAS</span>
+        </div>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.4" style="cursor:pointer"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"></path></svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.4" style="cursor:pointer"><path d="M6 8h12l1 13H5L6 8z"></path><path d="M9 8a3 3 0 0 1 6 0"></path></svg>
+      </div>
+    </div>
+    <nav style="display:flex;align-items:center;justify-content:center;gap:34px;padding:20px 0 16px;font-size:14px;letter-spacing:.1em;font-weight:500;border-bottom:1px solid #ededed">
+      <a href="#" style="color:#1a1a1a">SHOP BY CATEGORIES</a>
+      <a href="#" style="color:#1a1a1a">SHOP BY COLLECTION</a>
+      <a href="#" style="color:#1a1a1a">WEDDINGS</a>
+      <a href="#" style="color:#1a1a1a">NEW ARRIVALS</a>
+      <a href="#" style="color:#1a1a1a">BEST-SELLERS</a>
+      <a href="#" style="color:#cb2b2b">BRAND STORY</a>
+      <a href="#" style="color:#1a1a1a">REVIEWS❤️</a>
+      <a href="#" style="color:#cb2b2b">SALE</a>
+    </nav>
+  </header>
+
+  <main style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;padding:34px 40px 20px;align-items:start">
+
+    <section>
+      <div style="position:relative;border-radius:4px;overflow:hidden;background:#f3efe9">
+        <div style="position:absolute;top:0;left:0;background:#c9184a;color:#fff;font-size:13px;font-weight:600;letter-spacing:.08em;padding:6px 16px;transform:rotate(-45deg) translate(-26px,-4px);transform-origin:left top;width:120px;text-align:center;z-index:2">30%</div>
+        <img id="pdp-main" src="https://www.meerasplussizestore.com/cdn/shop/files/Pink-Rani--Anarkali-Prisha-SCL_2904.jpg?v=1759752986&width=1100" alt="Rani Mahal Anarkali" style="width:100%;aspect-ratio:3/4;object-fit:cover">
+      </div>
+      <div style="display:flex;gap:10px;margin-top:12px;overflow-x:auto;padding-bottom:4px">
+        <img src="https://www.meerasplussizestore.com/cdn/shop/files/Pink-Rani--Anarkali-Prisha-SCL_2904.jpg?v=1759752986&width=200" onClick="{{ selectThumb }}" data-file="2904" style="width:78px;height:104px;object-fit:cover;border-radius:3px;cursor:pointer;flex:0 0 auto;border:1px solid #eee">
+        <img src="https://www.meerasplussizestore.com/cdn/shop/files/Pink-Rani--Anarkali-Prisha-SCL_2906.jpg?v=1759752986&width=200" onClick="{{ selectThumb }}" data-file="2906" style="width:78px;height:104px;object-fit:cover;border-radius:3px;cursor:pointer;flex:0 0 auto;border:1px solid #eee">
+        <img src="https://www.meerasplussizestore.com/cdn/shop/files/Pink-Rani--Anarkali-Prisha-SCL_2907.jpg?v=1759752986&width=200" onClick="{{ selectThumb }}" data-file="2907" style="width:78px;height:104px;object-fit:cover;border-radius:3px;cursor:pointer;flex:0 0 auto;border:1px solid #eee">
+        <img src="https://www.meerasplussizestore.com/cdn/shop/files/Pink-Rani--Anarkali-Prisha-SCL_2909.jpg?v=1759752986&width=200" onClick="{{ selectThumb }}" data-file="2909" style="width:78px;height:104px;object-fit:cover;border-radius:3px;cursor:pointer;flex:0 0 auto;border:1px solid #eee">
+        <img src="https://www.meerasplussizestore.com/cdn/shop/files/Pink-Rani--Anarkali-Prisha-SCL_2916.jpg?v=1759752986&width=200" onClick="{{ selectThumb }}" data-file="2916" style="width:78px;height:104px;object-fit:cover;border-radius:3px;cursor:pointer;flex:0 0 auto;border:1px solid #eee">
+        <img src="https://www.meerasplussizestore.com/cdn/shop/files/Pink-Rani--Anarkali-Prisha-SCL_2926.jpg?v=1759752986&width=200" onClick="{{ selectThumb }}" data-file="2926" style="width:78px;height:104px;object-fit:cover;border-radius:3px;cursor:pointer;flex:0 0 auto;border:1px solid #eee">
+        <img src="https://www.meerasplussizestore.com/cdn/shop/files/Pink-Rani--Anarkali-Prisha-SCL_2948.jpg?v=1759752986&width=200" onClick="{{ selectThumb }}" data-file="2948" style="width:78px;height:104px;object-fit:cover;border-radius:3px;cursor:pointer;flex:0 0 auto;border:1px solid #eee">
+        <img src="https://www.meerasplussizestore.com/cdn/shop/files/Pink-Rani--Anarkali-Prisha-SCL_2954.jpg?v=1759752986&width=200" onClick="{{ selectThumb }}" data-file="2954" style="width:78px;height:104px;object-fit:cover;border-radius:3px;cursor:pointer;flex:0 0 auto;border:1px solid #eee">
+      </div>
+
+      <div style="margin-top:34px;border-top:1px solid #ededed">
+        <sc-for list="{{ accordions }}" as="a" hint-placeholder-count="4">
+          <div style="border-bottom:1px solid #ededed">
+            <button onClick="{{ a.toggle }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;background:none;border:none;padding:18px 2px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#1a1a1a;font-weight:500">
+              {{ a.title }}
+              <span style="font-size:20px;color:#999">{{ a.sign }}</span>
+            </button>
+            <sc-if value="{{ a.open }}" hint-placeholder-val="{{ false }}">
+              <p style="padding:0 2px 20px;font-size:13px;line-height:1.7;color:#5f5f5f;letter-spacing:.02em">{{ a.body }}</p>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section style="max-width:520px">
+      <h1 style="font-size:20px;line-height:1.4;font-weight:600;letter-spacing:.03em;text-transform:uppercase;color:#1a1a1a">Rani Mahal - Deep Pink Cutdana Embroidery Georgette Anarkali Dress</h1>
+      <div style="display:flex;align-items:baseline;gap:14px;margin-top:14px">
+        <span style="color:#e90670;font-size:20px;font-weight:600;letter-spacing:.03em">RS. 11,193.00</span>
+        <span style="color:#9a9a9a;font-size:16px;text-decoration:line-through;letter-spacing:.03em">RS. 15,990.00</span>
+      </div>
+
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:26px">
+        <span style="font-size:14px;letter-spacing:.06em;color:#1a1a1a">Size:</span>
+        <a href="#" style="font-size:13px;letter-spacing:.04em;color:#6b6b6b;text-decoration:underline;text-underline-offset:3px">Size chart</a>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:12px">
+        <sc-for list="{{ sizes }}" as="s" hint-placeholder-count="15">
+          <button onClick="{{ selectSize }}" data-size="{{ s.label }}" style="{{ s.style }}" style-hover="border-color:#d41472;color:#d41472">{{ s.label }}</button>
+        </sc-for>
+      </div>
+
+      <div style="display:inline-flex;align-items:center;border:1px solid #d6d6d6;border-radius:4px;margin-top:22px">
+        <button onClick="{{ decQty }}" style="border:none;background:none;width:42px;height:42px;font-size:18px;color:#555">−</button>
+        <span style="min-width:42px;text-align:center;font-size:15px">{{ qty }}</span>
+        <button onClick="{{ incQty }}" style="border:none;background:none;width:42px;height:42px;font-size:18px;color:#555">+</button>
+      </div>
+
+      <button style="width:100%;margin-top:20px;background:#e90670;color:#fff;border:none;border-radius:30px;padding:17px;font-size:15px;font-weight:600;letter-spacing:.18em;text-transform:uppercase" style-hover="background:#c9165f">Add to Cart</button>
+
+      <div style="display:flex;justify-content:space-between;gap:8px;margin-top:26px">
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center">
+          <img src="assets/trust1.png" style="width:78px;height:auto">
+          <span style="font-size:10px;letter-spacing:.05em;color:#6b6b6b;line-height:1.3;max-width:96px">SIZES UPTO 10XL</span>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center">
+          <img src="assets/trust2.png" style="width:78px;height:auto">
+          <span style="font-size:10px;letter-spacing:.05em;color:#6b6b6b;line-height:1.3;max-width:96px">CUSTOMISATION AVAILABLE</span>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center">
+          <img src="assets/trust3.png" style="width:78px;height:auto">
+          <span style="font-size:10px;letter-spacing:.05em;color:#6b6b6b;line-height:1.3;max-width:96px">2"-4" SEAM ALLOWANCE</span>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center">
+          <img src="assets/trust4.png" style="width:78px;height:auto">
+          <span style="font-size:10px;letter-spacing:.05em;color:#6b6b6b;line-height:1.3;max-width:96px">SHIPPING WORLDWIDE</span>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:12px;margin-top:24px">
+        <img src="https://www.meerasplussizestore.com/cdn/shop/files/Pink-Rani--Anarkali-Prisha-SCL_2926.jpg?v=1759752986&width=400" style="flex:1;border-radius:6px;aspect-ratio:1;object-fit:cover">
+        <img src="https://www.meerasplussizestore.com/cdn/shop/files/Pink-Rani--Anarkali-Prisha-SCL_2948.jpg?v=1759752986&width=400" style="flex:1;border-radius:6px;aspect-ratio:1;object-fit:cover">
+      </div>
+
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:20px;font-size:12px;letter-spacing:.05em;color:#8a8a8a">
+        <span>SKU: MCAKD251030CUST-62114210</span>
+        <span style="display:flex;align-items:center;gap:6px">SHARE <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8a8a8a" stroke-width="1.6"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"></path></svg></span>
+      </div>
+
+      <!-- ===== NEW: Need Help Shopping block (moved below accordions, left column) ===== -->
+      <div style="margin-top:24px;background:#fdeef5;border:1px solid #f4d3e3;border-radius:16px;padding:16px 16px 14px">
+        <div style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#a1587e;font-weight:600;margin:2px 2px 12px">Need help shopping?</div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+
+          <a href="https://wa.me/919610005615" target="_blank" style="display:flex;align-items:center;gap:14px;background:#fff;border:1px solid #f0d7e3;border-radius:12px;padding:13px 15px;text-decoration:none" style-hover="border-color:#d41472;transform:translateY(-1px)">
+            <span style="width:38px;height:38px;border-radius:50%;background:#e7f7ee;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#25a35a"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.4A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.2-.7-2.7-1.1-4.4-3.8-4.5-4-.1-.2-1.1-1.4-1.1-2.7 0-1.3.7-1.9 1-2.2.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6c-.1.2-.3.3-.1.6.1.3.7 1.1 1.4 1.7.9.8 1.7 1.1 2 1.2.2.1.4.1.5-.1l.6-.7c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.6.3.1.2.1.9-.1 1.5z"></path></svg>
+            </span>
+            <span style="flex:1;font-size:15px;font-weight:500;color:#2a2a2a;letter-spacing:.02em">Shop on WhatsApp</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c58fae" stroke-width="2"><path d="M9 6l6 6-6 6"></path></svg>
+          </a>
+
+          <button onClick="{{ openPopup }}" style="display:flex;align-items:center;gap:14px;background:#fff;border:1px solid #f0d7e3;border-radius:12px;padding:13px 15px;width:100%;text-align:left" style-hover="border-color:#d41472;transform:translateY(-1px)">
+            <span style="width:38px;height:38px;border-radius:50%;background:#fbe0ee;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+              <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#d41472" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="13" height="12" rx="2"></rect><path d="M15.5 10l6-3v10l-6-3z"></path></svg>
+            </span>
+            <span style="flex:1;font-size:15px;font-weight:500;color:#2a2a2a;letter-spacing:.02em">Shop on Video Call</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c58fae" stroke-width="2"><path d="M9 6l6 6-6 6"></path></svg>
+          </button>
+
+        </div>
+        <p style="font-size:11px;line-height:1.5;color:#9a7085;text-align:center;margin-top:12px">Free 15-min styling call over Google Meet · get fit &amp; fabric advice from a Meera stylist.</p>
+      </div>
+      <!-- ===== END new block ===== -->
+    </section>
+  </main>
+
+  <!-- BUY TOGETHER -->
+  <section style="max-width:760px;margin:60px auto 0;padding:0 40px">
+    <h2 style="text-align:center;font-size:15px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#1a1a1a;margin-bottom:26px">Buy Together</h2>
+    <div style="display:flex;flex-direction:column;gap:18px">
+      <sc-for list="{{ buyTogether }}" as="p">
+        <div style="display:flex;align-items:center;gap:18px">
+          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ p.src }}" style="width:70px;height:94px;object-fit:cover;border-radius:4px;flex:0 0 auto">
+          <div style="flex:1;min-width:0">
+            <div style="font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#2a2a2a;line-height:1.5">{{ p.title }}</div>
+            <div style="margin-top:5px;font-size:13px"><span style="color:#e6007e;font-weight:600">{{ p.price }}</span> <span style="color:#a9a9a9;text-decoration:line-through;margin-left:6px">{{ p.compare }}</span></div>
+          </div>
+          <button style="flex:0 0 auto;background:none;border:1px solid #e6007e;color:#e6007e;border-radius:24px;padding:10px 20px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:500" style-hover="background:#e6007e;color:#fff">Add to cart</button>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- VIDEO REELS -->
+  <section style="max-width:1200px;margin:70px auto 0;padding:0 40px">
+    <h2 style="text-align:center;font-size:15px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#1a1a1a;margin-bottom:26px">Video Reels</h2>
+    <div style="display:flex;gap:16px;overflow-x:auto;padding-bottom:8px">
+      <sc-for list="{{ reels }}" as="r">
+        <div style="position:relative;flex:0 0 auto;width:220px;aspect-ratio:9/16;border-radius:12px;overflow:hidden;background:#efeae6;cursor:pointer">
+          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ r.src }}" style="width:100%;height:100%;object-fit:cover">
+          <span style="position:absolute;top:12px;right:12px;width:30px;height:30px;border-radius:50%;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"></path></svg>
+          </span>
+          <span style="position:absolute;bottom:12px;left:12px;background:rgba(255,255,255,.92);color:#1a1a1a;font-size:11px;font-weight:600;padding:5px 10px;border-radius:20px">Shop now</span>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section style="max-width:1000px;margin:70px auto 0;padding:0 40px">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;border-bottom:1px solid #eee;padding-bottom:20px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="color:#f5a623;font-size:20px;letter-spacing:2px">★★★★★</span>
+        <span style="font-size:15px;color:#1a1a1a;font-weight:500">4.9</span>
+        <span style="font-size:13px;color:#8a8a8a">15 Reviews</span>
+      </div>
+      <button style="background:#e6007e;color:#fff;border:none;border-radius:24px;padding:11px 26px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500">Write a review</button>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0">
+      <sc-for list="{{ reviews }}" as="rv">
+        <div style="padding:26px 0;border-bottom:1px solid #eee">
+          <div style="display:grid;grid-template-columns:190px 1fr;gap:24px">
+            <div style="display:flex;align-items:flex-start;gap:12px">
+              <span style="width:40px;height:40px;border-radius:50%;background:#f3dbe8;color:#c9184a;display:flex;align-items:center;justify-content:center;font-weight:600;flex:0 0 auto">{{ rv.initial }}</span>
+              <div>
+                <div style="font-size:13px;font-weight:600;color:#1a1a1a;letter-spacing:.04em;text-transform:uppercase">{{ rv.name }}</div>
+                <div style="font-size:11px;color:#9a9a9a;margin-top:3px">{{ rv.place }}</div>
+              </div>
+            </div>
+            <div>
+              <div style="display:flex;align-items:center;justify-content:space-between">
+                <span style="color:#f5a623;font-size:14px;letter-spacing:1px">★★★★★</span>
+                <span style="font-size:11px;color:#a9a9a9">{{ rv.ago }}</span>
+              </div>
+              <div style="font-size:14px;font-weight:600;color:#1a1a1a;margin-top:10px">{{ rv.title }}</div>
+              <p style="font-size:13px;color:#5f5f5f;line-height:1.6;margin-top:6px">{{ rv.body }}</p>
+              <div style="display:flex;gap:8px;margin-top:12px">
+                <sc-for list="{{ rv.photoSrcs }}" as="ph">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ ph }}" style="width:64px;height:64px;object-fit:cover;border-radius:6px">
+                </sc-for>
+              </div>
+              <sc-if value="{{ rv.hasReply }}" hint-placeholder-val="{{ false }}">
+                <div style="background:#faf7f8;border-radius:8px;padding:14px 16px;margin-top:14px">
+                  <div style="font-size:12px;font-weight:600;color:#c9184a;margin-bottom:4px">THE PLUS SIZE STORE by Meera Creations Replied:</div>
+                  <p style="font-size:12px;color:#6b6b6b;line-height:1.6">{{ rv.reply }}</p>
+                </div>
+              </sc-if>
+            </div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+    <div style="display:flex;justify-content:center;margin-top:30px">
+      <button style="background:#e6007e;color:#fff;border:none;border-radius:26px;padding:13px 40px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500">Show more</button>
+    </div>
+  </section>
+
+  <!-- YOU MAY ALSO LIKE -->
+  <section style="max-width:1300px;margin:70px auto 0;padding:0 40px">
+    <h2 style="text-align:center;font-size:15px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#1a1a1a;margin-bottom:30px">You may also like</h2>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px">
+      <sc-for list="{{ related }}" as="p">
+        <div>
+          <div style="position:relative;border-radius:4px;overflow:hidden;background:#efeae6">
+            <sc-if value="{{ p.hasBadge }}" hint-placeholder-val="{{ false }}">
+              <span style="position:absolute;top:10px;left:10px;background:#e6007e;color:#fff;font-size:10px;letter-spacing:.08em;padding:4px 9px;border-radius:3px;z-index:2">{{ p.badge }}</span>
+            </sc-if>
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ p.src }}" style="width:100%;aspect-ratio:3/4;object-fit:cover">
+          </div>
+          <div style="margin-top:12px;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:#2a2a2a;line-height:1.5">{{ p.title }}</div>
+          <sc-if value="{{ p.hasRating }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex;align-items:center;gap:6px;margin-top:7px"><span style="color:#f5a623;font-size:12px;letter-spacing:1px">{{ p.stars }}</span><span style="font-size:11px;color:#8a8a8a">{{ p.rating }} ({{ p.count }})</span></div>
+          </sc-if>
+          <div style="margin-top:7px;font-size:13px;color:#e6007e;font-weight:600">{{ p.price }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- RECENTLY VIEWED -->
+  <section style="max-width:1300px;margin:70px auto 0;padding:0 40px">
+    <h2 style="text-align:center;font-size:15px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#1a1a1a;margin-bottom:30px">Recently viewed</h2>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px">
+      <sc-for list="{{ recentlyViewed }}" as="p">
+        <div>
+          <div style="position:relative;border-radius:4px;overflow:hidden;background:#efeae6">
+            <sc-if value="{{ p.hasBadge }}" hint-placeholder-val="{{ false }}">
+              <span style="position:absolute;top:10px;left:10px;background:#e6007e;color:#fff;font-size:10px;letter-spacing:.08em;padding:4px 9px;border-radius:3px;z-index:2">{{ p.badge }}</span>
+            </sc-if>
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ p.src }}" style="width:100%;aspect-ratio:3/4;object-fit:cover">
+          </div>
+          <div style="margin-top:12px;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:#2a2a2a;line-height:1.5">{{ p.title }}</div>
+          <sc-if value="{{ p.hasRating }}" hint-placeholder-val="{{ false }}">
+            <div style="display:flex;align-items:center;gap:6px;margin-top:7px"><span style="color:#f5a623;font-size:12px;letter-spacing:1px">{{ p.stars }}</span><span style="font-size:11px;color:#8a8a8a">{{ p.rating }} ({{ p.count }})</span></div>
+          </sc-if>
+          <div style="margin-top:7px;font-size:13px;color:#e6007e;font-weight:600">{{ p.price }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <footer style="background:#faf7f8;margin-top:50px;padding:56px 40px 28px;border-top:1px solid #eee">
+    <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr;gap:36px;font-size:13px;color:#4a4a4a;letter-spacing:.02em">
+      <div>
+        <div style="font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#1a1a1a;font-weight:600;margin-bottom:16px">Stay Updated</div>
+        <p style="font-size:13px;line-height:1.7;color:#6b6b6b;max-width:280px">Khamma Ghani 🙏 We'll keep you updated with whatever is happening at Meera Creations. Upcoming Offers, New Arrivals, Personal Recommendations &amp; much more.</p>
+        <div style="display:flex;margin-top:16px;max-width:300px">
+          <input placeholder="Enter your Email Address below 👇" style="flex:1;border:1px solid #d6d6d6;border-right:none;padding:11px 12px;font-family:inherit;font-size:12px;outline:none">
+        </div>
+        <button style="margin-top:10px;background:#1a1a1a;color:#fff;border:none;padding:11px 26px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;border-radius:2px">Subscribe</button>
+      </div>
+      <div>
+        <div style="letter-spacing:.12em;text-transform:uppercase;color:#1a1a1a;font-weight:600;margin-bottom:16px">Categories</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;color:#6b6b6b">
+          <li>Kurtas</li><li>Suit Sets</li><li>Dresses</li><li>Anarkali &amp; Anarkali Sets</li><li>Cape Sets</li><li>Sarees</li><li>Lehenga Sets</li><li>Co-ord Sets</li><li>Bottoms</li>
+        </ul>
+      </div>
+      <div>
+        <div style="letter-spacing:.12em;text-transform:uppercase;color:#1a1a1a;font-weight:600;margin-bottom:16px">Collections</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;color:#6b6b6b">
+          <li>Festive Fits</li><li>Retro Rani Edit</li><li>Dhaaga - Cotton Embroideries</li><li>Banarasi - The Royal Edit</li><li>Rule The Night - The Party Edition</li><li>Petal Poetry - Pure Muslin Florals</li>
+        </ul>
+      </div>
+      <div>
+        <div style="letter-spacing:.12em;text-transform:uppercase;color:#1a1a1a;font-weight:600;margin-bottom:16px">Information</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;color:#6b6b6b">
+          <li>About us</li><li>Our Blogs</li><li>FAQs</li><li>Our Stores</li><li>Delivery Information</li><li>Return/Exchange Request</li><li>Privacy Policy</li><li>Terms &amp; Conditions</li>
+        </ul>
+      </div>
+      <div>
+        <div style="letter-spacing:.12em;text-transform:uppercase;color:#1a1a1a;font-weight:600;margin-bottom:16px">Explore</div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;color:#6b6b6b">
+          <li>Indian Ethnic Wear</li><li>Contact Us</li><li>Payment Methods</li><li>International Shipping</li><li>Looking for a Customised Size?</li><li>Size Chart</li><li>Fabric Disclaimer &amp; Caring Tips</li>
+        </ul>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-top:44px;padding-top:22px;border-top:1px solid #e6e6e6">
+      <img src="https://www.meerasplussizestore.com/cdn/shop/files/Logo_Webp_efb9b2e7-75cc-4d3e-9981-aa127f90f385.webp" style="height:44px;object-fit:contain">
+      <span style="font-size:16px;letter-spacing:.06em;color:#3a3a3a">Freedom To Do More</span>
+      <div style="display:flex;gap:14px;color:#8a8a8a">
+        <span>f</span><span>◎</span><span>P</span><span>▶</span>
+      </div>
+    </div>
+    <p style="text-align:center;font-size:11px;color:#9a9a9a;margin-top:22px;letter-spacing:.05em">© 2026 - THE PLUS SIZE STORE BY MEERA CREATIONS</p>
+  </footer>
+
+  <!-- MOBILE MOCKUP: menu & floating behaviour -->
+  <section style="background:#f3eef1;padding:48px 40px 60px">
+    <div style="max-width:760px;margin:0 auto;text-align:center">
+      <h2 style="font-size:15px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#1a1a1a">Mobile — Menu &amp; Floating Behaviour</h2>
+      <p style="font-size:13px;color:#7a7a7a;margin-top:8px">No floating icon on mobile. A notification dot sits on the menu, and “Book a Video Appointment” lives in the hamburger menu with a New tag.</p>
+    </div>
+    <div style="display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin-top:36px">
+
+      <!-- Phone: header with dotted menu -->
+      <div style="width:300px;height:600px;background:#fff;border:10px solid #1a1a1a;border-radius:38px;overflow:hidden;box-shadow:0 20px 40px rgba(0,0,0,.18);position:relative">
+        <div style="background:#e6007e;color:#fff;font-size:9px;font-weight:700;letter-spacing:.06em;text-align:center;padding:7px">BIGGEST SALE OF THE YEAR | UPTO 60% OFF</div>
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 16px">
+          <span style="position:relative;display:inline-flex">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.6"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+            <span style="position:absolute;top:-4px;right:-4px;width:9px;height:9px;border-radius:50%;background:#e6007e;border:1.5px solid #fff"></span>
+          </span>
+          <img src="https://www.meerasplussizestore.com/cdn/shop/files/Logo_Webp_efb9b2e7-75cc-4d3e-9981-aa127f90f385.webp" style="height:40px;object-fit:contain">
+          <div style="display:flex;gap:12px;color:#1a1a1a">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4-4"></path></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"></path></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 8h12l1 13H5L6 8z"></path><path d="M9 8a3 3 0 0 1 6 0"></path></svg>
+          </div>
+        </div>
+        <img src="https://www.meerasplussizestore.com/cdn/shop/files/Pink-Rani--Anarkali-Prisha-SCL_2904.jpg?v=1759752986&width=500" style="width:100%;height:auto">
+        <div style="position:absolute;left:0;right:0;bottom:0;text-align:center;font-size:11px;color:#8a5772;background:#fff;padding:10px">Menu icon carries the notification dot — no floating button.</div>
+      </div>
+
+      <!-- Phone: open drawer -->
+      <div style="width:300px;height:600px;background:#fff;border:10px solid #1a1a1a;border-radius:38px;overflow:hidden;box-shadow:0 20px 40px rgba(0,0,0,.18);position:relative">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 16px 10px">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.6"><path d="M5 5l14 14M19 5L5 19"></path></svg>
+        </div>
+        <div style="padding:0 18px;display:flex;flex-direction:column">
+          <div style="font-size:12px;font-weight:600;color:#c9184a;letter-spacing:.04em;padding:11px 0;border-bottom:1px solid #eee">SALE- ALL</div>
+          <div style="font-size:12px;font-weight:600;color:#c9184a;letter-spacing:.04em;padding:11px 0;border-bottom:1px solid #eee">SALE- FLAT 50%-60% OFF</div>
+          <div style="font-size:12px;font-weight:600;color:#c9184a;letter-spacing:.04em;padding:11px 0;border-bottom:1px solid #eee">SALE- FLAT 30%-40% OFF</div>
+          <div style="display:flex;align-items:center;justify-content:space-between;font-size:12px;color:#1a1a1a;letter-spacing:.04em;padding:11px 0;border-bottom:1px solid #eee">SHOP BY CATEGORIES <span style="color:#bbb">›</span></div>
+          <div style="display:flex;align-items:center;justify-content:space-between;font-size:12px;color:#1a1a1a;letter-spacing:.04em;padding:11px 0;border-bottom:1px solid #eee">SHOP BY COLLECTION <span style="color:#bbb">›</span></div>
+          <div style="display:flex;align-items:center;justify-content:space-between;font-size:12px;color:#1a1a1a;letter-spacing:.04em;padding:11px 0;border-bottom:1px solid #eee">WEDDINGS <span style="color:#bbb">›</span></div>
+          <div style="font-size:12px;color:#1a1a1a;letter-spacing:.04em;padding:11px 0;border-bottom:1px solid #eee">NEW ARRIVALS</div>
+          <div style="font-size:12px;color:#1a1a1a;letter-spacing:.04em;padding:11px 0;border-bottom:1px solid #eee">BEST-SELLERS</div>
+          <div onClick="{{ openPopup }}" style="display:flex;align-items:center;gap:10px;padding:13px 0;cursor:pointer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e6007e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="13" height="12" rx="2"></rect><path d="M15.5 10l6-3v10l-6-3z"></path></svg>
+            <span style="font-size:12px;font-weight:600;color:#e6007e;letter-spacing:.04em">BOOK A VIDEO APPOINTMENT</span>
+            <span style="background:#111;color:#fff;font-size:9px;font-weight:700;padding:2px 7px;border-radius:10px">New</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DESKTOP FLOATING ICONS: Video Call (New) + WhatsApp -->
+  <div style="position:fixed;right:22px;bottom:22px;z-index:60;display:flex;flex-direction:column;gap:14px;align-items:center">
+    <button onClick="{{ openPopup }}" title="Book a Video Call Appointment" style="position:relative;width:58px;height:58px;border-radius:50%;background:#e6007e;border:none;box-shadow:0 6px 18px rgba(0,0,0,.22);display:flex;align-items:center;justify-content:center" style-hover="background:#c9165f">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="13" height="12" rx="2"></rect><path d="M15.5 10l6-3v10l-6-3z"></path></svg>
+      <span style="position:absolute;top:-8px;right:-10px;background:#111;color:#fff;font-size:10px;font-weight:700;letter-spacing:.04em;padding:2px 7px;border-radius:10px">New</span>
+    </button>
+    <a href="https://wa.me/919610005615" target="_blank" title="Chat on WhatsApp" style="width:58px;height:58px;border-radius:50%;background:#25d366;box-shadow:0 6px 18px rgba(0,0,0,.22);display:flex;align-items:center;justify-content:center">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.4A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.2-.7-2.7-1.1-4.4-3.8-4.5-4-.1-.2-1.1-1.4-1.1-2.7 0-1.3.7-1.9 1-2.2.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6c-.1.2-.3.3-.1.6.1.3.7 1.1 1.4 1.7.9.8 1.7 1.1 2 1.2.2.1.4.1.5-.1l.6-.7c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.6.3.1.2.1.9-.1 1.5z"></path></svg>
+    </a>
+  </div>
+
+  <sc-if value="{{ popup }}" hint-placeholder-val="{{ false }}">
+    <div style="position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:100;display:flex;align-items:center;justify-content:center;padding:24px;font-family:Inter,sans-serif">
+      <div style="background:#fdeef5;border-radius:12px;width:100%;max-width:1040px;max-height:88vh;overflow:auto;position:relative;padding:40px 44px">
+        <button onClick="{{ closePopup }}" style="position:absolute;top:20px;right:22px;background:none;border:none;font-size:22px;color:#333;line-height:1">✕</button>
+        <h2 style="font-size:26px;font-weight:700;color:#111;letter-spacing:-.02em;margin-bottom:26px">Video Call Appointment</h2>
+
+        <sc-if value="{{ step1 }}" hint-placeholder-val="{{ false }}">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:36px">
+            <div style="background:#fff;border-radius:10px;padding:22px">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+                <span style="color:#666;font-size:20px;cursor:pointer">‹</span>
+                <span style="font-size:16px;font-weight:600;color:#111">August &nbsp;2026</span>
+                <span style="color:#666;font-size:20px;cursor:pointer">›</span>
+              </div>
+              <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:6px;text-align:center;font-size:12px;color:#999;font-weight:600;margin-bottom:6px">
+                <span>SU</span><span>MO</span><span>TU</span><span>WE</span><span>TH</span><span>FR</span><span>SA</span>
+              </div>
+              <div id="tipo-cal" style="display:grid;grid-template-columns:repeat(7,1fr);gap:6px;text-align:center;font-size:14px">
+                <span style="color:#ccc;padding:9px 0">26</span><span style="color:#ccc;padding:9px 0">27</span><span style="color:#ccc;padding:9px 0">28</span><span style="color:#ccc;padding:9px 0">29</span><span style="color:#ccc;padding:9px 0">30</span><span style="color:#ccc;padding:9px 0">31</span><span style="color:#ccc;padding:9px 0">1</span>
+                <span style="color:#ccc;padding:9px 0">2</span><span style="color:#ccc;padding:9px 0">3</span><span style="color:#ccc;padding:9px 0">4</span><span style="color:#ccc;padding:9px 0">5</span><span style="color:#ccc;padding:9px 0">6</span><span style="color:#ccc;padding:9px 0">7</span><span style="color:#ccc;padding:9px 0">8</span>
+                <span style="color:#ccc;padding:9px 0">9</span><span style="color:#ccc;padding:9px 0">10</span><span style="color:#ccc;padding:9px 0">11</span><span style="color:#ccc;padding:9px 0">12</span><span style="color:#ccc;padding:9px 0">13</span><span style="color:#ccc;padding:9px 0">14</span><span style="color:#ccc;padding:9px 0">15</span>
+                <span style="color:#333;padding:9px 0">16</span><span style="color:#333;padding:9px 0">17</span><span style="color:#333;padding:9px 0">18</span>
+                <span style="padding:9px 0;color:#fff"><span style="background:#e90670;border-radius:50%;padding:8px 11px;color:#fff">19</span></span>
+                <span style="color:#333;padding:9px 0">20</span><span style="color:#333;padding:9px 0">21</span><span style="color:#333;padding:9px 0">22</span>
+                <span style="color:#333;padding:9px 0">23</span><span style="color:#333;padding:9px 0">24</span><span style="color:#333;padding:9px 0">25</span><span style="color:#333;padding:9px 0">26</span><span style="color:#333;padding:9px 0">27</span><span style="color:#333;padding:9px 0">28</span><span style="color:#333;padding:9px 0">29</span>
+                <span style="color:#333;padding:9px 0">30</span><span style="color:#333;padding:9px 0">31</span><span style="color:#ccc;padding:9px 0">1</span><span style="color:#ccc;padding:9px 0">2</span><span style="color:#ccc;padding:9px 0">3</span><span style="color:#ccc;padding:9px 0">4</span><span style="color:#ccc;padding:9px 0">5</span>
+              </div>
+            </div>
+
+            <div>
+              <div style="font-size:14px;color:#333;margin-bottom:8px">Variant</div>
+              <div style="background:#fff;border-radius:8px;padding:15px 16px;display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
+                <span style="font-size:15px;color:#111">Video Call Appointment</span>
+                <span style="font-size:13px;color:#888;background:#f2f2f2;padding:3px 10px;border-radius:20px">15 minutes</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:6px;font-size:14px;color:#333;margin-bottom:12px">🌐 <b style="font-weight:600">UTC</b> <span style="color:#999">(GMT+00:00)</span></div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;max-height:300px;overflow-y:auto;padding-right:4px">
+                <sc-for list="{{ slots }}" as="sl" hint-placeholder-count="12">
+                  <button onClick="{{ pickSlot }}" data-slot="{{ sl.t }}" style="{{ sl.style }}">
+                    <span>{{ sl.t }}</span><span style="font-size:11px;opacity:.7">1 LEFT</span>
+                  </button>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:30px">
+            <div style="display:flex;align-items:center;gap:14px;font-size:14px">
+              <span style="display:flex;align-items:center;gap:8px;color:#111"><span style="width:22px;height:22px;border-radius:50%;background:#e90670;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px">1</span><b style="font-weight:600">Schedule your sessions</b></span>
+              <span style="color:#bbb">›</span>
+              <span style="display:flex;align-items:center;gap:8px;color:#aaa"><span style="width:22px;height:22px;border-radius:50%;border:1px solid #ccc;display:flex;align-items:center;justify-content:center;font-size:12px">2</span>Confirm your sessions</span>
+            </div>
+            <button onClick="{{ goStep2 }}" style="background:#e90670;color:#fff;border:none;border-radius:6px;padding:13px 34px;font-size:15px;font-weight:600" style-hover="background:#c9165f">Continue</button>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ step2 }}" hint-placeholder-val="{{ false }}">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:44px">
+            <div style="font-size:14px;color:#333">
+              <div style="text-transform:uppercase;letter-spacing:.06em;font-size:12px;color:#888;font-weight:600;margin-bottom:16px">Session schedule</div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:12px"><span style="color:#888">Session date</span><b style="font-weight:600;color:#111">Aug,19 2026 | {{ slot }}</b></div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:28px"><span style="color:#888">Time zone</span><b style="font-weight:600;color:#111">UTC (GMT+00:00)</b></div>
+              <div style="text-transform:uppercase;letter-spacing:.06em;font-size:12px;color:#888;font-weight:600;margin-bottom:16px">Services</div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:12px"><span style="color:#888">Variant</span><b style="font-weight:600;color:#111">Video Call Appointment</b></div>
+              <div style="display:flex;justify-content:space-between"><span style="color:#888">Team member</span><b style="font-weight:600;color:#111">Shruti Bhatia</b></div>
+            </div>
+            <div>
+              <div style="text-transform:uppercase;letter-spacing:.06em;font-size:12px;color:#888;font-weight:600;margin-bottom:16px">Other Information</div>
+              <label style="font-size:14px;color:#333;display:block;margin-bottom:6px">First name <span style="color:#e90670">*</span></label>
+              <input style="width:100%;background:#fff;border:1px solid #e3c9d6;border-radius:6px;padding:13px;margin-bottom:16px;font-family:inherit;outline:none">
+              <label style="font-size:14px;color:#333;display:block;margin-bottom:6px">Last name <span style="color:#e90670">*</span></label>
+              <input style="width:100%;background:#fff;border:1px solid #e3c9d6;border-radius:6px;padding:13px;margin-bottom:16px;font-family:inherit;outline:none">
+              <label style="font-size:14px;color:#333;display:block;margin-bottom:6px">Phone number <span style="color:#e90670">*</span></label>
+              <div style="display:flex;align-items:center;background:#fff;border:1px solid #e3c9d6;border-radius:6px;margin-bottom:16px;overflow:hidden">
+                <span style="display:flex;align-items:center;gap:6px;padding:13px 12px;color:#333;font-size:14px">
+                  <span style="width:22px;height:15px;border-radius:2px;display:inline-block;background:linear-gradient(to bottom,#ff9933 33%,#fff 33% 66%,#128807 66%)"></span>
+                  <span style="font-size:11px;color:#888">▾</span>
+                </span>
+                <input placeholder="070 123 4567" style="flex:1;background:none;border:none;padding:13px 13px 13px 0;font-family:inherit;outline:none">
+              </div>
+              <label style="font-size:14px;color:#333;display:block;margin-bottom:6px">Email <span style="color:#e90670">*</span></label>
+              <input style="width:100%;background:#fff;border:1px solid #e3c9d6;border-radius:6px;padding:13px;margin-bottom:16px;font-family:inherit;outline:none">
+              <label style="font-size:14px;color:#333;display:block;margin-bottom:12px">What would you like help with? <span style="color:#e90670">*</span></label>
+              <div style="display:flex;flex-wrap:wrap;gap:12px 22px;margin-bottom:14px">
+                <sc-for list="{{ helpOptions }}" as="h">
+                  <label onClick="{{ h.pick }}" style="display:flex;align-items:center;gap:8px;font-size:14px;color:#333;cursor:pointer"><input type="radio" name="helpwith" checked="{{ h.on }}" readOnly="{{ true }}" style="accent-color:#e90670;width:16px;height:16px">{{ h.label }}</label>
+                </sc-for>
+              </div>
+              <div style="display:flex;gap:10px;background:#fff5fa;border:1px solid #f4d3e3;border-radius:8px;padding:12px 14px;margin-bottom:20px">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#e90670" stroke-width="1.6" style="flex:0 0 auto;margin-top:1px"><circle cx="12" cy="12" r="9"></circle><path d="M12 8h.01M11 12h1v4h1"></path></svg>
+                <p style="font-size:12.5px;line-height:1.55;color:#8a5772">{{ helpNote }}</p>
+              </div>
+              <label style="font-size:14px;color:#333;display:block;margin-bottom:6px">Remark <span style="color:#e90670">*</span></label>
+              <textarea rows="4" style="width:100%;background:#fff;border:1px solid #e3c9d6;border-radius:6px;padding:13px;font-family:inherit;outline:none;resize:vertical"></textarea>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:30px">
+            <div style="display:flex;align-items:center;gap:14px;font-size:14px">
+              <span style="display:flex;align-items:center;gap:8px;color:#aaa"><span style="width:22px;height:22px;border-radius:50%;border:1px solid #ccc;display:flex;align-items:center;justify-content:center;font-size:12px">1</span>Schedule your sessions</span>
+              <span style="color:#bbb">›</span>
+              <span style="display:flex;align-items:center;gap:8px;color:#111"><span style="width:22px;height:22px;border-radius:50%;background:#e90670;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px">2</span><b style="font-weight:600">Confirm your sessions</b></span>
+            </div>
+            <div style="display:flex;gap:12px">
+              <button onClick="{{ goStep1 }}" style="background:#fff;color:#111;border:1px solid #d6d6d6;border-radius:6px;padding:13px 30px;font-size:15px;font-weight:600">Back</button>
+              <button style="background:#e90670;color:#fff;border:none;border-radius:6px;padding:13px 30px;font-size:15px;font-weight:600" style-hover="background:#c9165f">Book Now</button>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1500,&quot;height&quot;:1400}}">
+class Component extends DCLogic {
+  state = { qty: 1, size: "Customised", open: {}, popup: false, step: 1, slot: "11:45 - 12:00", helpWith: "Sizing & Fit" };
+
+  get CDN() { return "https://www.meerasplussizestore.com/cdn/shop/files/"; }
+
+  componentDidMount() { this._hydrateImgs(); }
+  componentDidUpdate() { this._hydrateImgs(); }
+  _hydrateImgs() {
+    document.querySelectorAll("img[data-src]").forEach((i) => {
+      const d = i.getAttribute("data-src");
+      if (d && !d.includes("{{") && i.getAttribute("src") !== d) i.src = d;
+    });
+  }
+
+  renderVals() {
+    const V = "?v=1759752986&width=200";
+    const files = ["2904","2906","2907","2909","2916","2926","2948","2954"];
+    const thumbs = files.map(f => `${this.CDN}Pink-Rani--Anarkali-Prisha-SCL_${f}.jpg${V}`);
+
+    const base = "min-width:62px;height:46px;padding:0 16px;border-radius:26px;font-size:15px;letter-spacing:.01em;background:#fff;color:#e6007e;font-weight:500;";
+    const sizeList = ["Customised","XS","S","M","L","XL","2XL","3XL","4XL","5XL","6XL","7XL","8XL","9XL","10XL"];
+    const sizes = sizeList.map(label => {
+      const on = label === this.state.size;
+      return { label, style: base + (on
+        ? "border:1.5px solid #e6007e;"
+        : "border:1px solid #e6e0e2;") };
+    });
+
+    const trust = [
+      { label: "SIZES UPTO 10XL", icon: '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 7l4-3 4 3 4-3 4 3v13H4z"/></svg>' },
+      { label: "CUSTOMIZATION AVAILABLE", icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M14 4l6 6-9 9H5v-6z"/><path d="M12 6l6 6"/></svg>' },
+      { label: '2"-4" SEAM ALLOWANCE', icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 3l18 18M8 3v4M12 3v3M16 3v4"/><path d="M3 8h4M3 12h3M3 16h4"/></svg>' },
+      { label: "SHIPPING WORLDWIDE", icon: '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>' },
+    ];
+
+    const acc = [
+      { title: "Description", body: "FABRIC DETAILS — Top: Georgette · Lining: Pure Cotton · Dupatta: Georgette. Unveil radiant charm with Rani Mahal, a deep pink cutdana embroidery georgette Anarkali with cape and dupatta. Intricate embroidery flows across the flared silhouette for an effortlessly regal festive look." },
+      { title: "Looking for a customised size?", body: "We tailor every piece to fit you. Select 'Customised' and share your measurements at checkout, or book a free video call with a Meera stylist for guided fit advice." },
+      { title: "Return / Exchange Policy", body: "Easy 7-day return & exchange on eligible items. Customised sizes are made-to-order and non-returnable. Refer to our full policy for details." },
+      { title: "Other Details & Contact Us", body: "Mon–Sat, 9:00 am to 5:00 pm (IST) · +91-9610005615 · orders@meerasplussizestore.com · Meera Creations, 4-BHA-14, Manilek Marg, Sector-4, Jawahar Nagar, Jaipur, Rajasthan 302004." },
+    ];
+    const accordions = acc.map((a, i) => ({
+      title: a.title, body: a.body,
+      open: !!this.state.open[i], sign: this.state.open[i] ? "–" : "+",
+      toggle: () => this.setState(s => ({ open: { ...s.open, [i]: !s.open[i] } })),
+    }));
+
+    const slotTimes = ["10:30 - 10:45","10:45 - 11:00","11:00 - 11:15","11:15 - 11:30","11:30 - 11:45","11:45 - 12:00","12:00 - 12:15","12:15 - 12:30","12:30 - 12:45","12:45 - 13:00","13:00 - 13:15","13:15 - 13:30"];
+    const slotBase = "display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border-radius:8px;font-size:14px;cursor:pointer;";
+    const slots = slotTimes.map(t => ({ t, style: slotBase + (t === this.state.slot
+      ? "background:#e90670;color:#fff;border:1px solid #e90670;"
+      : "background:#fff;color:#333;border:1px solid #f0dbe6;") }));
+
+    const saleStrip = ["LIMITED STOCK | ENDS ON 19TH JULY","SALE ON 10+ CATEGORIES","250+ STYLES | UPTO 60% OFF","EOSS SALE | BIGGEST DISCOUNTS","LIMITED STOCK | ENDS ON 19TH JULY","SALE ON 10+ CATEGORIES"];
+    const cdn = (f, w = 500) => `${this.CDN}${f}?width=${w}`;
+    const buyTogether = [
+      { img: "Yellow-Anarkali-Lavina-SCL_3037.jpg", title: "Surya Mahal - Yellow Cutdana Embroidery Georgette Anarkali Dress", price: "From Rs. 11,193.00", compare: "Rs. 15,990.00" },
+      { img: "NEW_Royal-Blue-Anarkali-Parisha-SCL_2500.jpg", title: "Khwaab - Dreamy Prussian Blue Viscose Tissue Sequin Embroidered Anarkali Set", price: "From Rs. 13,390.00", compare: "" },
+      { img: "Navy-Blue-Anarkali--Ananaya-SCL_1435.jpg", title: "Heera Mahal - Regal Navy Duotone Sequin Embroidery Anarkali Set", price: "From Rs. 20,950.00", compare: "" },
+      { img: "Wine-Cape-Set--Lacina-SCL_0388.jpg", title: "Noorani - Wine Georgette Sequin Embroidery Slit Anarkali Lehenga Set", price: "From Rs. 19,950.00", compare: "" },
+      { img: "Rust-Suit-Set--Ananya-SCL_0306.jpg", title: "Sheesh Mahal - Rust Orange Pure Georgette Embroidery Suit Set", price: "From Rs. 10,350.00", compare: "" },
+    ].map(p => ({ ...p, src: cdn(p.img, 200) }));
+
+    const related = [
+      { img: "Colourfull-Anarkali-Anjali-SCL_4663.jpg", title: "Aurora Beauty Sequin Embroidered Georgette Anarkali Dress", rating: "4.8", count: "8", price: "From Rs. 12,535.00", badge: "BEST SELLER" },
+      { img: "Maroon-Anarkali-Lavina-SCL_6847.jpg", title: "Wine Thread Embroidered Georgette Anarkali Dress", rating: "4.8", count: "34", price: "From Rs. 6,490.00", badge: "BEST SELLER" },
+      { img: "Lilac-Anarkali-Set-Prisha-SCL_1393.jpg", title: "Kaju Katli- Periwrinkle Purple Embroidered Georgette Anarkali Set", rating: "4.5", count: "2", price: "From Rs. 14,720.00", badge: "" },
+      { img: "Black-Anarkali-Ananya-SCL_1080_f5385567-95af-4b7b-ab8a-875c16370b98.jpg", title: "Bournville- Black Georgette Paisley & Sequin Embroidered Anarkali Set", rating: "5.0", count: "11", price: "From Rs. 16,450.00", badge: "BEST SELLER" },
+    ].map(p => ({ ...p, src: cdn(p.img, 500), stars: "★★★★★", hasRating: !!p.count, hasBadge: !!p.badge }));
+
+    const recentlyViewed = [
+      { img: "SCL_3102.jpg", title: "Madhavi- Midnight Blue Slit Anarkali Lehenga Set", rating: "", count: "", price: "From Rs. 11,790.00", badge: "NEW" },
+      { img: "Denim-Saree-Ananya-SCL_8534.jpg", title: "Indie Star- Medium Blue Denim Sequin Embellished Drape Saree Set", rating: "", count: "", price: "From Rs. 10,950.00", badge: "" },
+      { img: "SCL_3238.jpg", title: "Grace- Black Fine Cotton Lycra Pintuck Top", rating: "5.0", count: "1", price: "From Rs. 3,250.00", badge: "" },
+      { img: "Light-Green-Kurta-lavina-SCL_0999.jpg", title: "Cool Crush- Light Blue Floral Thread Embroidered Mul Chanderi Kurta", rating: "", count: "", price: "From Rs. 3,790.00", badge: "" },
+    ].map(p => ({ ...p, src: cdn(p.img, 500), stars: "★★★★★", hasRating: !!p.count, hasBadge: !!p.badge }));
+
+    const reels = [
+      "Pink-Rani--Anarkali-Prisha-SCL_2904.jpg","Yellow-Anarkali-Lavina-SCL_3037.jpg","Wine-Cape-Set--Lacina-SCL_0388.jpg","Black-Anarkali-Ananya-SCL_1080_f5385567-95af-4b7b-ab8a-875c16370b98.jpg","Denim-Saree-Ananya-SCL_8534.jpg","Green-Anarkali-Delnaaz-SCL_9114.jpg"
+    ].map(f => ({ src: cdn(f, 400) }));
+
+    const reviews = [
+      { initial: "M", name: "Manvi G.", place: "Shivpuri, UP", title: "EXCELLENT!", body: "Product: Ravishing Black Kutch Embroidered Anarkali", ago: "4 weeks ago", photos: ["Black-Anarkali-Aakansha-SCL_4505.jpg","Black-Anarkali-Aakansha-SCL_4513.jpg"], reply: "" },
+      { initial: "S", name: "Sangita P.", place: "California, United States", title: "EXCELLENT", body: "Got all the things I ask for and very good material", ago: "2 weeks ago", photos: ["Green-Saree-Delnaaz-SCL_7010.jpg","Green-Saree-Delnaaz-SCL_7043.jpg"], reply: "Dear Sangita, Thank you so much for your fantastic 5-star review! We..." },
+      { initial: "S", name: "Saijal R.", place: "Mumbai, MH", title: "HIGHLY RECOMMENDED!", body: "My outfit came all the way to Kenya and it fit so nicely. I have found the perfect go-to place for all my Indian clothes.", ago: "2 weeks ago", photos: ["Yellow-Lehanga-Set-Lavina-SCL_7134.jpg"], reply: "Dear Saijal, Thank you so much for your wonderful 5-star review! We..." },
+    ].map(r => ({ ...r, photoSrcs: r.photos.map(f => cdn(f, 160)), hasReply: !!r.reply }));
+
+    const helpData = [
+      { label: "Sizing & Fit", note: "Keep an inch/measuring tape and your latest body measurements (bust, waist, hips, length) handy so the stylist can guide your perfect fit." },
+      { label: "See fabric & colour", note: "Join from a spot with good daylight and keep the product you're interested in open on your screen, so the stylist can show you the true fabric texture and colour." },
+      { label: "Styling advice", note: "Have any outfits, jewellery or footwear you'd like to pair kept nearby so the stylist can help you put together a complete look." },
+      { label: "Customisation", note: "Keep your measurements and a few reference images of the changes you want (sleeves, neckline, length) ready to share on the call." },
+      { label: "Occasion & Look", note: "Tell us the event, date and the vibe you're going for, and keep any inspiration pictures handy so we can plan the perfect look together." },
+    ];
+    const helpOptions = helpData.map(h => ({ label: h.label, on: h.label === this.state.helpWith, pick: () => this.setState({ helpWith: h.label }) }));
+    const helpNote = (helpData.find(h => h.label === this.state.helpWith) || helpData[0]).note;
+
+    return {
+      qty: this.state.qty, thumbs, sizes, trust, accordions, slots, buyTogether, related, recentlyViewed, reels, reviews, helpOptions, helpNote, saleStrip, true: true, false: false,
+      selectThumb: (e) => { const f = e.currentTarget.dataset.file; document.getElementById("pdp-main").src = `${this.CDN}Pink-Rani--Anarkali-Prisha-SCL_${f}.jpg?v=1759752986&width=1100`; },
+      selectSize: (e) => { const v = e.currentTarget.dataset.size; this.setState({ size: v }); },
+      incQty: () => this.setState(s => ({ qty: s.qty + 1 })),
+      decQty: () => this.setState(s => ({ qty: Math.max(1, s.qty - 1) })),
+      openPopup: () => this.setState({ popup: true, step: 1 }),
+      closePopup: () => this.setState({ popup: false }),
+      goStep2: () => this.setState({ step: 2 }),
+      goStep1: () => this.setState({ step: 1 }),
+      popup: this.state.popup, step1: this.state.step === 1, step2: this.state.step === 2,
+      slot: this.state.slot,
+      pickSlot: (e) => this.setState({ slot: e.currentTarget.dataset.slot }),
+    };
+  }
+}
+</script>
+</body>
+</html>
